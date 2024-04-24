@@ -1,8 +1,29 @@
-h1 }
-text-alig: center;
-{
+h1 {
+text-align: center;
+}
 
   p{
     text-align: center;
   
   }
+#missao{
+  font-size: 28px;
+}
+.principal{
+  beckground-color: #cccc
+}
+.titulo-principal{
+  padding-left: 20px;
+}
+,beneficios{
+  width: 95%;
+}
+.imagem{
+  width: 95%;
+}
+.centro-centralizado{
+  text-align: center;
+}
+.ul{
+  display: : -block;
+}
