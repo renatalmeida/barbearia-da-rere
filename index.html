@@ -1,44 +1,75 @@
-<<!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="produtos.css">
+    <title>Contato - Barbearia Matos</title>   
   </head>
-  <body>
-    <header>
-      <h1 class="titulo-principal">Barbearia Nati</h1>
-    </header>
-    <img id="banner" src="banner.jpg">
-    <div class="principal">
-      <h2 class="texto-centralizado"> Sobre a Barbearia Nati </h2>
-      <p>Localizada no coração da cidade de <em>São José dos Pinhais</em>, a <strong>Barbearia Nati</strong> traz para
-        o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2020, a Barbearia Nati já é destaque na
-        cidade e conquista novos clientes a cada dia.</p>
-      <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
-            clientes".</strong></em></p>
-      <p>Oferecemos profissionais experimentes e antenados às mudanças no mundo da moda. O atendimento possui padrão de
-        excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+
+<body>
+  <header>
+    <div class="caixa"> 
+    <h1> <img src="logo.png"> </h1>
+<nav>
+<ul>
+  <li><a href="index.html"> HOME</a></li>
+
+  <li><a href="produtos.html"> PRODUTOS</a></li>
+
+  <li><a href="contato.html"> CONTATO</a></li>
+
+</ul>
+    </nav>
     </div>
-    <div class="beneficios">
-      <h3 class="texto-centralizado">Benefícios</h3>
+  </header>
 
-      <ul>
-        <li>Atendimento aos clientes</li>
-        <li>Espaço diferenciado</li>
-        <li>Localização</li>
-        <li>Profissionais qualificados</li>
-        <li class="item">Atendimento aos clientes</li>
-        <li class="item">Espaço diferenciado</li>
-        <li class="item">Localização</li>
-        <li class="item">Profissionais qualificados</li>
-      </ul>
+<main>
+<form>
+  <label for="nomeSobrenome"> Nome e Sobrenome </label>
+  <input type="text" id="nomeSobrenome" class="input-padrao" required>
 
-      <img class="imagem-beneficios" src="beneficios.jpg">
-    </div>
+  <label for="email"> Email </label>
+  <input type="email" id="email" class="input-padrao" placeholder="xxxxxx@gmail.com" required>
 
-    <a href="produtos.html">PRODUTOS</a>
-  </body>
+  <label for="telefone"> Telefone </label>
+  <input type="tel" id="telefone" class="input-padrao" placeholder="(xx) x xxxxx-xxxx" required>
 
-  </html>
+  <label for="mensagem"> Deixe aqui sua mensagem </label>
+  <textarea cols="30" rows="5" id="mensagem" class="input-padrao" placeholder="Conte sua experiência em nosso estabelecimento." ></textarea>
+
+<fieldset>
+  <legend>Como prefere o nosso contato?</legend>
+  <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> Email </label>
+  <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone </label>
+  <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp </label>
+</fieldset>
+
+<fieldset>
+  <legend>Qual sua preferência de horário?</legend>
+
+  <select>
+    <option>Manhã</option>
+    <option>
+Tarde</option>
+    <option>Noite</option>
+  </select>
+</fieldset>
+
+  <label> <input type="checkbox" class="checkbox" checked> Gostaria de receber nossas ofertas via e-mail? </label>
+
+  <input type="submit" value="Enviar o formulário" class="enviar">
+
+</form>
+</main>
+
+  <footer>
+  <img src="logo-branco.png">
+    <p class="copyright"> Copyrights Barbearia Alura - 2019</p>
+  </footer>
+
+</body>
+</html>

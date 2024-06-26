@@ -1,21 +1,109 @@
-<!<!DOCTYPE html>
+header{
+  background-color: #BBBBBB;
+  padding: 20px 0px;
+}
 
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Produtos - Barbearia Nati</title>
-  </head>
+.caixa{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
 
-  <body>
-    <header>
-      <h1> <img src="logo.png"> </h1>
+nav {
+  position: absolute;
+  top: 110px;
+  rigth: 0;
+}
 
-      <ul>
-        <li> <a href="index.html"> Home     </a> </li>
-        <li> <a href="produtos.html"> Produtos </a> </li>
-        <li> <a href="contato.html"> Contato  </a> </li>
-      </ul>
-    </header>
-  </body>
-</html>
+
+
+nav li{
+  display: inline;
+  margin-left: 15px;
+}
+
+
+nav a {
+  color:#000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav a: hover{
+  color: #C78C19;
+  text-decoration: underline;
+}
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.produtos h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao{
+  font-size: 18px;
+}
+
+.produto-preco{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+
+.produtos li{
+  display: inline-block;
+  border: 1px solid #000000;
+border-radius: 10px;  
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+
+.produtos li:hover{
+  border-color: #C78C19;
+}
+
+
+.produtos li:hover h2{
+  font-size: 34px;
+}
+
+.produtos li:active{
+  border-color: #088C19;
+}
+
+footer{
+  background: url("bg.jpg");
+text-align: center;
+  padding: 40px 0;
+}
+
+.copyright{
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+main{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.input-padrao{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
